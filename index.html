@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatHub - Discord Bot</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --container-bg: #161b22;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent-green: #238636;
+            --accent-hover: #2ea043;
+            --border-color: #30363d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .bot-card {
+            background-color: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+
+        .bot-pfp {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #fff;
+            padding: 5px;
+            border: 2px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 2rem;
+            color: #ffffff;
+        }
+
+        .tagline {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            text-align: left;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .feature-item::before {
+            content: "✓";
+            color: var(--accent-green);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .invite-btn {
+            display: inline-block;
+            background-color: var(--accent-green);
+            color: white;
+            text-decoration: none;
+            padding: 12px 32px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .invite-btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .invite-btn:active {
+            transform: translateY(0);
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bot-card">
+        <!-- GitHub Logo as PFP -->
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="CatHub Logo" class="bot-pfp">
+        
+        <h1>CatHub</h1>
+        <p class="tagline">The ultimate repository manager for your Discord server.</p>
+
+        <div class="features">
+            <div class="feature-item">Upload files up to 300MB</div>
+            <div class="feature-item">Organize code in custom branches</div>
+            <div class="feature-item">Read and display scripts in-chat</div>
+            <div class="feature-item">Private file downloads</div>
+        </div>
+
+        <a href="https://discord.com/oauth2/authorize?client_id=1502302712564416703&permissions=6827245654108224&integration_type=0&scope=bot" class="invite-btn">Invite CatHub to Discord</a>
+
+        <footer>
+            Powered by Discord.py • 2026
+        </footer>
+    </div>
+
+</body>
+</html>
